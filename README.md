@@ -1,6 +1,7 @@
 # 🚀 Study via AI (10倍速 AI 辅助自适应学习操作系统)
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Release-v0.1.0-brightgreen?style=for-the-badge" alt="Release v0.1.0" />
   <img src="https://img.shields.io/badge/Antigravity-Agent_Skill-blue?style=for-the-badge&logo=google" alt="Antigravity Skill" />
   <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman-orange?style=for-the-badge" alt="Pedagogy" />
   <img src="https://img.shields.io/badge/State_Machine-Decoupled-green?style=for-the-badge" alt="State Machine" />
@@ -11,27 +12,43 @@
 
 ---
 
-## 🌟 为什么选择 Study via AI？
+## 📊 架构范式对比 (Paradigm Comparison)
 
-市面上绝大多数学习类 Prompt / Skill 往往存在三大致命痛点：
-1. **填鸭与假懂**：AI 一口气把所有内容全总结出来，看似学了很多，其实是大脑的“认知过载”与“看懂了的假象”。
-2. **长上下文状态漂移**：聊到第 3 个小时，AI 注意力涣散，忘记最初的严格规则，开始胡乱跳步。
-3. **学完无资产**：关闭对话窗口后，交互过程全部丢失，没有留下可复用、可检索的结构化成果。
+| 核心维度 | 传统问答/总结类 Prompt | 纯大纲路线规划工具 | **Study via AI (学习操作系统)** |
+| :--- | :--- | :--- | :--- |
+| **教学颗粒度** | 一次性输出长篇大论，容易造成认知过载 | 只生成章节标题，缺乏逐点精讲 | **极小颗粒度**：一次对话仅讲一个知识点，通俗比喻讲透 |
+| **自有资料锚定** | 仅根据通用大模型知识作答 | 简单提取文本大纲 | **精准溯源**：精确指出教材第几章第几页 / 视频时间戳 |
+| **内化考核深度** | 无考核或浅层提问，易产生“看懂了的幻觉” | 仅提供自测题目，无即时纠错 | **双重内化闭环**：AI 考官逐题打分 + 12 岁儿童白话费曼诊断 |
+| **抗遗忘与上下文** | 长对话（3小时+）后注意力涣散、规则遗忘 | 无状态流转机制 | **机器状态头解耦**：硬盘存储状态 > Context 记忆，杜绝漂移 |
+| **成果资产化** | 聊天窗口关闭即丢失，无体系沉淀 | 仅生成简单的日志文件 | **12 份标准 Markdown 档案**：带 `[TOC]` 大纲树与一页速查表 |
+| **交互自由度** | 被动顺着 AI 预设流程走 | 难以动态调整进度 | **全局驾驶舱**：支持 `/skip`, `/jump`, `/status`, `/mode` |
 
-**Study via AI 彻底重构了 AI 辅助学习的工作流：**
+---
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                        Study via AI 核心架构                            │
-├────────────────────────────────────────────────────────────────────────┤
-│ 1. 输入全自适应     │ 支持 PDF / Word / 视频 / 链接 / 主题任意材料     │
-│ 2. 单点沉浸教学     │ 一次对话只讲一个知识点，通俗比喻 + 资料页码精确定位 │
-│ 3. 双重内化考核     │ AI 考官单题打分 + 12 岁儿童白话费曼纠错循环       │
-│ 4. 外部机器状态头   │ 首行元数据解耦，防上下文注意力漂移，100% 确定性接关 │
-│ 5. 12 份标准档案    │ 原生工具静默落盘 00~255 号 Markdown + 一页速查表   │
-│ 6. 全局逃生/快进    │ 支持 /skip, /jump (带依赖气囊), /status, /mode    │
-└────────────────────────────────────────────────────────────────────────┘
-```
+## 💻 多平台兼容性矩阵 (Compatibility Matrix)
+
+`Study_via_AI` 充分利用了现代 AI Agent 的**原生工具调用（Native Tool Calling）与文件读写能力**：
+
+| 开发环境 / AI Agent 平台 | 兼容性支持 | 安装说明与配置路径 |
+| :--- | :---: | :--- |
+| **Google Antigravity** | 🌟 **完美原生支持 (推荐)** | 放入 `~/.gemini/config/skills/Study_via_AI/`（自动识别与静默落盘） |
+| **Claude Code** | ✅ **完全支持** | 放入 `~/.claude/skills/Study_via_AI/` 或项目 `.claude/skills/` |
+| **OpenAI Codex CLI** | ✅ **完全支持** | 放入 `~/.codex/skills/Study_via_AI/` |
+| **Cursor / Windsurf** | ✅ **支持** | 引入作为项目 Rules / Agent Skill 配置 |
+| **普通网页端 (Web Chat)** | ⚠️ **需手动落盘** | 网页版因缺少本地磁盘写入权限，需由用户手动复制生成的 Markdown |
+
+---
+
+## 📚 真实场景实战示例 (Real-World Examples)
+
+本仓库在 [`examples/`](./examples/) 目录中提供了涵盖**硬核工科、人文情商、声乐艺术**三个完全不同维度的完整落地范例：
+
+1. ⚙️ **[GD32 嵌入式单片机与固件开发](./examples/gd32_embedded_development/)**
+   - 包含：`00` 号 RCU 时钟树与外设 5 级阶梯路线图、`01` 号推挽/开漏原理解析、考官 100 分实录与一页速查表。
+2. 💬 **[两性高情商沟通与亲密关系心理学](./examples/relationship_communication/)**
+   - 包含：`00` 号情绪需求全景规划、`01` 号“情绪先于事实”接纳模型、同理心实战场景打分与速查表。
+3. 🎵 **[现代流行声乐演唱与发声机理](./examples/vocal_techniques_mastery/)**
+   - 包含：`00` 号呼吸支持、换声区与平衡混声 5 级进阶阶梯。
 
 ---
 
@@ -46,7 +63,7 @@ stateDiagram-v2
     state Phase2_Plan_Execution {
         [*] --> Single_Concept_Teaching: 启动 Plan N (读取首行 SYSTEM_STATE)
         Single_Concept_Teaching --> QnA_and_Discussion: 讲解单个知识点 + 溯源指引
-        QnA_and_Discussion --> Single_Concept_Teaching: 答疑直至弄懂（下一个知识点）
+        QnA_and_Discussion --> Single_Concept_Teaching: 答疑直至搞懂（下一个知识点）
         QnA_and_Discussion --> Dual_Validation: 当前 Plan 知识点全部学完
         
         state Dual_Validation {
@@ -67,7 +84,7 @@ stateDiagram-v2
 
 ---
 
-## 📁 标准化 12 份 Markdown 资产体系
+## 📁 规范化 12 份 Markdown 资产体系
 
 学完整个课程后，系统将在你的专属学习目录下自动生成 12 份排版严谨、包含 `[TOC]` 大纲树的 Markdown 知识库：
 
@@ -87,33 +104,28 @@ stateDiagram-v2
 * `/skip`：跳过当前知识点讲解或考核，快速进入下一环节。
 * `/jump <01~10|255>`：直接跳转到指定 Plan。*(自带前序依赖安全气囊，跳级时会提醒确认)*
 * `/status`：调出当前学习进度与掌握度阶梯。
-* `/cheatsheet [01~10|255]`：调出指定 Plan 或全域终极的一页速查表。
+* `/cheatsheet [01~10|255]`：直接调出指定 Plan 或全域终极的一页速查表。
 * `/mode <quick|deep>`：切换模式（`quick` 极速突击 / `deep` 深度攻坚）。
 
 ---
 
-## 📥 安装与使用指南
+## 📥 安装与快速上手 (Quick Start)
 
-### 在 Google Antigravity 中使用（推荐）
+### 3 步安装指南
 
-#### 方式 1：全局安装（所有项目通用）
-将本仓库中的 `Study_via_AI` 文件夹放置到全局配置目录中：
-* **Windows**: `C:\Users\<用户名>\.gemini\config\skills\Study_via_AI\`
-* **macOS / Linux**: `~/.gemini/config/skills/Study_via_AI/`
+1. **克隆或下载仓库**：
+   ```bash
+   git clone https://github.com/lowellran/Study_via_AI.git
+   ```
+2. **放置到 Skill 目录（以 Antigravity 为例）**：
+   - **Windows**: 将整个文件夹复制到 `C:\Users\<用户名>\.gemini\config\skills\Study_via_AI\`
+   - **macOS / Linux**: `~/.gemini/config/skills/Study_via_AI/`
+3. **在对话中一键启动**：
+   ```text
+   使用 Study_via_AI 帮我学习 [主题名称 / 上传教材文档 / 粘贴文章链接]
+   ```
 
-#### 方式 2：项目专属安装
-将 `Study_via_AI` 文件夹放置到任意项目的 `.agents/skills/Study_via_AI/` 目录下。
-
----
-
-### 🚀 快速启动
-
-在对话框中直接输入：
-```text
-使用 Study_via_AI 帮我学习 [主题名称 / 上传教材文档 / 粘贴文章链接]
-```
-
-**断点续学（新开会话）**：
+**跨会话断点续学**（新开会话）：
 ```text
 继续 [文件夹名称或主题名称] 的学习
 ```
@@ -122,4 +134,4 @@ stateDiagram-v2
 
 ## 📄 开源许可证
 
-本项目采用 [MIT 许可证](LICENSE)。欢迎 Star ⭐️、Fork 并提交 PR！
+本项目采用 [MIT 许可证](LICENSE)。欢迎提交 PR、提出 Issue，或在你的日常学习中享受 10 倍速深度的成长！⭐️
