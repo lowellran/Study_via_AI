@@ -1,7 +1,11 @@
+<p align="right">
+  <b>中文</b> | <a href="./README_EN.md">English</a>
+</p>
+
 # 🚀 Study via AI (10倍速 AI 辅助自适应学习操作系统)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Release-v0.1.0-brightgreen?style=for-the-badge" alt="Release v0.1.0" />
+  <img src="https://img.shields.io/badge/Release-v0.1.1-brightgreen?style=for-the-badge" alt="Release v0.1.1" />
   <img src="https://img.shields.io/badge/Antigravity-Agent_Skill-blue?style=for-the-badge&logo=google" alt="Antigravity Skill" />
   <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman-orange?style=for-the-badge" alt="Pedagogy" />
   <img src="https://img.shields.io/badge/State_Machine-Decoupled-green?style=for-the-badge" alt="State Machine" />
@@ -12,13 +16,61 @@
 
 ---
 
+## ⚡ 极简安装与升级 (Quick Install)
+
+### 方式一：直接告诉 AI 智能体（最推荐，0 门槛）
+
+直接复制以下一句话发送给 **Google Antigravity / Claude Code / Codex / OpenCode / ZCode / OpenClaw / Reasonix** 等任何支持导入 GitHub 仓库或 Skill 的 AI 平台：
+
+```text
+安装这个 skill https://github.com/lowellran/Study_via_AI
+```
+> 💡 *后续若有版本更新，再次发送同一句话即可自动无损升级。*
+
+---
+
+### 方式二：命令行一键安装 (CLI)
+
+```bash
+# 全局快速安装到 skills 仓库
+npx skills add lowellran/Study_via_AI -y -g
+```
+
+---
+
+### 方式三：手动放置文件 (Manual)
+
+1. 克隆或下载本仓库：
+   ```bash
+   git clone https://github.com/lowellran/Study_via_AI.git
+   ```
+2. 将 `Study_via_AI` 文件夹放置到全局配置目录中：
+   - **Windows**: `C:\Users\<用户名>\.gemini\config\skills\Study_via_AI\`
+   - **macOS / Linux**: `~/.gemini/config/skills/Study_via_AI/`
+
+---
+
+## 🚀 极速上手 (Quick Start)
+
+安装完成后，在任意对话中直接输入：
+```text
+使用 Study_via_AI 帮我学习 [主题名称 / 上传教材文档 / 粘贴文章链接]
+```
+
+**跨会话断点续学**（随时新开对话窗口）：
+```text
+继续 [文件夹名称或主题名称] 的学习
+```
+
+---
+
 ## 📊 架构范式对比 (Paradigm Comparison)
 
 | 核心维度 | 传统问答/总结类 Prompt | 纯大纲路线规划工具 | **Study via AI (学习操作系统)** |
 | :--- | :--- | :--- | :--- |
 | **教学颗粒度** | 一次性输出长篇大论，容易造成认知过载 | 只生成章节标题，缺乏逐点精讲 | **极小颗粒度**：一次对话仅讲一个知识点，通俗比喻讲透 |
 | **自有资料锚定** | 仅根据通用大模型知识作答 | 简单提取文本大纲 | **精准溯源**：精确指出教材第几章第几页 / 视频时间戳 |
-| **内化考核深度** | 无考核或浅层提问，易产生“看懂了的幻觉” | 仅提供自测题目，无即时纠错 | **双重内化闭环**：AI 考官逐题打分 + 12 岁儿童白话费曼诊断 |
+| **内化考核深度** | 无考核或浅层提问，易产生“看懂了的假象” | 仅提供自测题目，无即时纠错 | **双重内化闭环**：AI 考官逐题打分 + 12 岁儿童白话费曼诊断 |
 | **抗遗忘与上下文** | 长对话（3小时+）后注意力涣散、规则遗忘 | 无状态流转机制 | **机器状态头解耦**：硬盘存储状态 > Context 记忆，杜绝漂移 |
 | **成果资产化** | 聊天窗口关闭即丢失，无体系沉淀 | 仅生成简单的日志文件 | **12 份标准 Markdown 档案**：带 `[TOC]` 大纲树与一页速查表 |
 | **交互自由度** | 被动顺着 AI 预设流程走 | 难以动态调整进度 | **全局驾驶舱**：支持 `/skip`, `/jump`, `/status`, `/mode` |
@@ -27,13 +79,12 @@
 
 ## 💻 多平台兼容性矩阵 (Compatibility Matrix)
 
-`Study_via_AI` 充分利用了现代 AI Agent 的**原生工具调用（Native Tool Calling）与文件读写能力**：
-
-| 开发环境 / AI Agent 平台 | 兼容性支持 | 安装说明与配置路径 |
+| 开发环境 / AI Agent 平台 | 兼容性支持 | 说明与支持特性 |
 | :--- | :---: | :--- |
-| **Google Antigravity** | 🌟 **完美原生支持 (推荐)** | 放入 `~/.gemini/config/skills/Study_via_AI/`（自动识别与静默落盘） |
-| **Claude Code** | ✅ **完全支持** | 放入 `~/.claude/skills/Study_via_AI/` 或项目 `.claude/skills/` |
-| **OpenAI Codex CLI** | ✅ **完全支持** | 放入 `~/.codex/skills/Study_via_AI/` |
+| **Google Antigravity** | 🌟 **完美原生支持 (推荐)** | 自动识别 Skill、自动文件读写、静默落盘 12 份文档 |
+| **Claude Code** | ✅ **完全支持** | 原生工具写入、跨会话断点续学、支持全局与项目级配置 |
+| **OpenAI Codex CLI** | ✅ **完全支持** | 原生执行与自动化工作流 |
+| **OpenCode / ZCode / OpenClaw** | ✅ **完全支持** | 完整支持状态机与命令系统 |
 | **Cursor / Windsurf** | ✅ **支持** | 引入作为项目 Rules / Agent Skill 配置 |
 | **普通网页端 (Web Chat)** | ⚠️ **需手动落盘** | 网页版因缺少本地磁盘写入权限，需由用户手动复制生成的 Markdown |
 
@@ -41,14 +92,14 @@
 
 ## 📚 真实场景实战示例 (Real-World Examples)
 
-本仓库在 [`examples/`](./examples/) 目录中提供了涵盖**硬核工科、人文情商、声乐艺术**三个完全不同维度的完整落地范例：
+本仓库在 [`examples/`](./examples/) 目录中提供了涵盖**硬核工科、人文情商、声乐艺术**三个维度的完整落地范例：
 
 1. ⚙️ **[GD32 嵌入式单片机与固件开发](./examples/gd32_embedded_development/)**
    - 包含：`00` 号 RCU 时钟树与外设 5 级阶梯路线图、`01` 号推挽/开漏原理解析、考官 100 分实录与一页速查表。
 2. 💬 **[两性高情商沟通与亲密关系心理学](./examples/relationship_communication/)**
    - 包含：`00` 号情绪需求全景规划、`01` 号“情绪先于事实”接纳模型、同理心实战场景打分与速查表。
 3. 🎵 **[现代流行声乐演唱与发声机理](./examples/vocal_techniques_mastery/)**
-   - 包含：`00` 号呼吸支持、换声区与平衡混声 5 级进阶阶梯。
+   - 包含：`00` 号呼吸支持、换声区与平衡混声 5 级进阶规划。
 
 ---
 
@@ -109,29 +160,6 @@ stateDiagram-v2
 
 ---
 
-## 📥 安装与快速上手 (Quick Start)
-
-### 3 步安装指南
-
-1. **克隆或下载仓库**：
-   ```bash
-   git clone https://github.com/lowellran/Study_via_AI.git
-   ```
-2. **放置到 Skill 目录（以 Antigravity 为例）**：
-   - **Windows**: 将整个文件夹复制到 `C:\Users\<用户名>\.gemini\config\skills\Study_via_AI\`
-   - **macOS / Linux**: `~/.gemini/config/skills/Study_via_AI/`
-3. **在对话中一键启动**：
-   ```text
-   使用 Study_via_AI 帮我学习 [主题名称 / 上传教材文档 / 粘贴文章链接]
-   ```
-
-**跨会话断点续学**（新开会话）：
-```text
-继续 [文件夹名称或主题名称] 的学习
-```
-
----
-
 ## 📄 开源许可证
 
-本项目采用 [MIT 许可证](LICENSE)。欢迎提交 PR、提出 Issue，或在你的日常学习中享受 10 倍速深度的成长！⭐️
+本项目采用 [MIT 许可证](LICENSE)。欢迎提交 PR、提出 Issue，或在日常学习中享受 10 倍速深度的成长！⭐️
