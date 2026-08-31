@@ -92,14 +92,14 @@ Continue learning in [Folder Name or Topic]
 
 ## 📚 Real-World Examples
 
-Explore concrete learning runs in the [`examples/`](./examples/) folder:
+Explore genuine, authentic learning runs from actual study sessions in the [`examples/`](./examples/) folder:
 
-1. ⚙️ **[GD32 Microcontroller & Firmware Development](./examples/gd32_embedded_development/)**
-   - Features: `00` RCU Clock Tree 5-level ladder roadmap, `01` Push-Pull/Open-Drain breakdown, 100-score examiner log & cheat sheet.
-2. 💬 **[High-EQ Communication & Relationship Psychology](./examples/relationship_communication/)**
-   - Features: `00` Emotional needs roadmap, `01` "Empathy before Logic" acceptance model, scenario testing & cheat sheet.
-3. 🎵 **[Modern Vocal Techniques & Resonance](./examples/vocal_techniques_mastery/)**
-   - Features: `00` Diaphragmatic support, Passaggio transition & Mixed Voice 5-level mastery ladder.
+1. ⚙️ **[GD32F4 Microcontroller & Hardware Driver Development](./examples/gd32_embedded_development/)**
+   - Features: `00` RCU Clock Tree 5-level ladder roadmap, `01` Real hardware code breakdown, RCU/GPIO examiner score logs & cheat sheet.
+2. 💬 **[Social Dynamics & Relationship Psychology Mastery](./examples/pua_dynamics_mastery/)**
+   - Features: `00` Evolutionary psychology & frame control roadmap, `01` Authentic dual-value signifier transcript & cheat sheet.
+3. 🎵 **[KTV Pop Vocal Techniques & Resonance](./examples/ktv_vocal_mastery/)**
+   - Features: `00` Vocal progression ladder roadmap, `01` Diaphragmatic support & vocal cord closure verbatim transcript & cheat sheet.
 
 ---
 
