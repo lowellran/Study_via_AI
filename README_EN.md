@@ -2,25 +2,32 @@
   <a href="./README.md">中文</a> | <b>English</b>
 </p>
 
-# 🚀 Study via AI (10x AI-Powered Adaptive Learning OS)
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Release-v0.1.1-brightgreen?style=for-the-badge" alt="Release v0.1.1" />
-  <img src="https://img.shields.io/badge/Antigravity-Agent_Skill-blue?style=for-the-badge&logo=google" alt="Antigravity Skill" />
-  <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman-orange?style=for-the-badge" alt="Pedagogy" />
-  <img src="https://img.shields.io/badge/State_Machine-Decoupled-green?style=for-the-badge" alt="State Machine" />
-  <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" />
+  <h1 align="center">🚀 Study via AI</h1>
+  <p align="center"><b>10x Socratic AI Study OS for Agentic Coding & Knowledge Mastery</b></p>
+  <p align="center"><i>From Zero to Deep Mastery: Single-concept Immersion + Dual Inner-Assessment + 12 Structured Markdown Assets Silent Dump</i></p>
 </p>
 
-> **Transform your AI into a master tutor and Socratic mentor. Reject spoon-feeding and the illusion of competence. Powered by single-concept immersion, dual active-recall validation, and automated 12-document structured knowledge archival.**
+<p align="center">
+  <a href="https://github.com/lowellran/Study_via_AI/stargazers"><img src="https://img.shields.io/github/stars/lowellran/Study_via_AI?style=for-the-badge&logo=github&color=gold" alt="Stars" /></a>
+  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.2-brightgreen?style=for-the-badge" alt="Release" /></a>
+  <img src="https://img.shields.io/badge/Supported-Claude_Code_%7C_Codex_%7C_Antigravity_%7C_Cursor-blue?style=for-the-badge" alt="Platforms" />
+  <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman-orange?style=for-the-badge" alt="Pedagogy" />
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" /></a>
+</p>
 
 ---
 
-## ⚡ Super Easy Installation & Updates
+> 💡 **Say Goodbye to Shallow Learning where you chat with AI and forget everything once the tab closes!**  
+> `Study_via_AI` is an adaptive study operating system built for modern AI agents including **Google Antigravity, Claude Code, OpenAI Codex CLI, Cursor, and Windsurf**. Rejecting overwhelming spoon-feeding, it uses a **strict state machine, single-concept immersion, an AI examiner with percentage scoring, and a 12-year-old Feynman feedback loop** to automatically generate 12 structured Markdown knowledge base files locally.
 
-### Method 1: Natural Language Prompt (Recommended, Zero-Setup)
+---
 
-Simply paste the following command into **Google Antigravity / Claude Code / OpenAI Codex / OpenCode / ZCode / OpenClaw / Reasonix** or any Agent platform supporting GitHub repo/skill imports:
+## ⚡ Super Easy Installation (Quick Install)
+
+### Method 1: Natural Language Prompt (Recommended, Zero Setup)
+
+Simply copy and paste this single prompt into **Google Antigravity / Claude Code / Codex / Cursor**:
 
 ```text
 Install this skill https://github.com/lowellran/Study_via_AI
@@ -29,137 +36,141 @@ Install this skill https://github.com/lowellran/Study_via_AI
 
 ---
 
-### Method 2: CLI One-Liner
+### Method 2: One-Liner CLI
 
+#### For Codex CLI:
 ```bash
-# Add globally to your skills registry
+# Windows (PowerShell)
+git clone https://github.com/lowellran/Study_via_AI.git "$env:USERPROFILE\.codex\skills\Study_via_AI"
+
+# macOS / Linux
+git clone https://github.com/lowellran/Study_via_AI.git ~/.codex/skills/Study_via_AI
+```
+
+#### For Generic Agent Skills Registry:
+```bash
 npx skills add lowellran/Study_via_AI -y -g
 ```
 
 ---
 
-### Method 3: Manual Installation
+## 🎯 30-Second Quick Start
 
-1. Clone or download this repository:
-   ```bash
-   git clone https://github.com/lowellran/Study_via_AI.git
-   ```
-2. Place the `Study_via_AI` folder into your global skills directory:
-   - **Windows**: `C:\Users\<Username>\.gemini\config\skills\Study_via_AI\`
-   - **macOS / Linux**: `~/.gemini/config/skills/Study_via_AI/`
-
----
-
-## 🚀 Quick Start
-
-Once installed, start learning in any chat session:
+Once installed, simply send in any conversation:
 ```text
-Use Study_via_AI to help me master [Topic / Upload Textbook PDF / Paste Article Link]
+Use Study_via_AI to help me master [Topic Name / Upload Textbook PDF / Paste Article or Video Link]
 ```
 
-**Cross-Session Resumption** (start a new chat anytime):
+**Cross-Session Breakpoint Resume** (Start a new conversation anytime without losing progress):
 ```text
-Continue learning in [Folder Name or Topic]
+Resume study for [Folder Name or Topic Name]
 ```
 
 ---
 
-## 📊 Paradigm Comparison
+## 📊 Why Choose Study via AI? (Paradigm Comparison)
 
-| Dimension | Generic Q&A / Summary Prompts | Roadmap Outline Tools | **Study via AI (Learning OS)** |
+| Core Dimension | Traditional Q&A / Summary Prompts | Pure Outline Tools | 🚀 **Study via AI (Learning OS)** |
 | :--- | :--- | :--- | :--- |
-| **Teaching Granularity** | Dumps long walls of text, causing cognitive overload | Generates titles without deep concept teaching | **Extreme Single-Concept Pacing**: Teaches one point per turn with vivid analogies |
-| **Material Grounding** | Relies solely on generic pre-trained knowledge | Superficial text extraction | **Precise Page Sourcing**: Points to exact textbook page numbers & video timestamps |
-| **Validation Rigor** | No testing or shallow queries ("Did you get it?") | Static quizzes without interactive error diagnosis | **Dual Active Recall**: AI Examiner progressive scoring + 12-year-old Feynman diagnostic loop |
-| **State & Anti-Drift** | Suffers severe attention drift & rule amnesia in 3h+ chats | Stateless | **Decoupled Machine State Header**: External file state > Context memory |
-| **Knowledge Assetization**| Ephemeral chat logs lost when closing window | Plain summary notes | **12 Standardized Markdown Archives**: Built-in `[TOC]` outline tree & one-page cheatsheets |
-| **User Autonomy** | User is passively dragged through fixed prompts | Rigid execution | **Command Center**: Full control with `/skip`, `/jump`, `/status`, `/mode` |
+| **Teaching Granularity** | Dumps long walls of text; causes cognitive overload | Only generates high-level outlines | **Micro-concept Immersion**: Focuses strictly on 1 concept per turn |
+| **Source Material Grounding** | Generic output detached from textbooks | Rough table-of-contents extraction | **Precise Source Grounding**: References exact textbook chapters/pages & video timestamps |
+| **Active Recall Depth** | No quizzes or superficial questions; "illusion of competence" | Unchecked practice questions | **Dual-Internalization Loop**: AI examiner percentage scoring + 12-year-old plain English Feynman review |
+| **Anti-Drift & Context** | Rules forgotten in long sessions; severe context drift | No state transition mechanics | **Decoupled Machine State**: Disk-persisted state header > Context memory |
+| **Asset Archival** | Disappears when closing chat window; zero retention | Fragmented session logs | **12 Structured Markdown Files**: Complete with TOC outline tree, dialogues & 1-page cheatsheets |
+| **User Agency** | Passively pushed by rigid AI flows | Hard to adjust pace | **Global Command Center**: Full control with `/skip`, `/jump`, `/status`, `/mode` |
 
 ---
 
-## 💻 Multi-Platform Compatibility Matrix
-
-| Environment / Agent Platform | Compatibility | Features & Capabilities |
-| :--- | :---: | :--- |
-| **Google Antigravity** | 🌟 **Native (Recommended)** | Auto-skill discovery, silent native file tool write, 12-doc archival |
-| **Claude Code** | ✅ **Full Support** | Native file write, cross-session resumption, project/global config |
-| **OpenAI Codex CLI** | ✅ **Full Support** | Native task automation and execution |
-| **OpenCode / ZCode / OpenClaw** | ✅ **Full Support** | Full state machine & interactive command support |
-| **Cursor / Windsurf** | ✅ **Supported** | Configurable via Agent Skills / Rules |
-| **Web Chat (Vanilla ChatGPT / Claude)** | ⚠️ **Manual Fallback** | Lacks native filesystem access; markdown must be copied manually |
-
----
-
-## 📚 Real-World Examples
-
-Explore genuine, authentic learning runs from actual study sessions in the [`examples/`](./examples/) folder:
-
-1. ⚙️ **[GD32F4 Microcontroller & Hardware Driver Development](./examples/gd32_embedded_development/)**
-   - Features: `00` RCU Clock Tree 5-level ladder roadmap, `01` Real hardware code breakdown, RCU/GPIO examiner score logs & cheat sheet.
-2. 💬 **[Social Dynamics & Relationship Psychology Mastery](./examples/pua_dynamics_mastery/)**
-   - Features: `00` Evolutionary psychology & frame control roadmap, `01` Authentic dual-value signifier transcript & cheat sheet.
-3. 🎵 **[KTV Pop Vocal Techniques & Resonance](./examples/ktv_vocal_mastery/)**
-   - Features: `00` Vocal progression ladder roadmap, `01` Diaphragmatic support & vocal cord closure verbatim transcript & cheat sheet.
-
----
-
-## 🔄 State Machine & Workflow
+## 🔄 Full Workflow & State Machine
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Phase0_Initialization: User Input (Topic / Doc / Video / Link)
-    Phase0_Initialization --> Phase1_Roadmap_Gen: Confirm Scope & Create Folder
+    [*] --> Phase0_Initialization: User Input (Topic / Document / Video / Link)
+    Phase0_Initialization --> Phase1_Roadmap_Gen: Confirm Scope & Initialize Workspace
     Phase1_Roadmap_Gen --> Phase2_Plan_Execution: Silently Write 00_overview_and_roadmap.md
     
     state Phase2_Plan_Execution {
-        [*] --> Single_Concept_Teaching: Start Plan N (Read Line 1 SYSTEM_STATE)
-        Single_Concept_Teaching --> QnA_and_Discussion: Teach 1 Concept + Material Citation
-        QnA_and_Discussion --> Single_Concept_Teaching: Answer questions until fully grasped
-        QnA_and_Discussion --> Dual_Validation: Plan concepts completed
+        [*] --> Single_Concept_Teaching: Start Plan N (Read SYSTEM_STATE header)
+        Single_Concept_Teaching --> QnA_and_Discussion: Explain Single Micro-Concept + Grounding
+        QnA_and_Discussion --> Single_Concept_Teaching: Q&A until fully understood (Next concept)
+        QnA_and_Discussion --> Dual_Validation: All concepts in current Plan finished
         
         state Dual_Validation {
-            [*] --> AI_Examiner: Method 3: Progressive AI Examiner Scoring (100-pt scale)
-            AI_Examiner --> Feynman_Loop: Exam Passed -> Method 6: 12-Yr-Old Feynman Loop
-            Feynman_Loop --> [*]: Feynman Validation Cleared
+            [*] --> AI_Examiner: Method 3: AI Examiner quizzes & 100-point scoring
+            AI_Examiner --> Feynman_Loop: Quiz Passed -> Method 6: 12-year-old Feynman Loop
+            Feynman_Loop --> [*]: Feynman verification passed
         }
         
-        Dual_Validation --> Archive_Plan_Document: Silently Write 01~10 Plan Records
-        Archive_Plan_Document --> Update_Machine_State: Update Line 1 SYSTEM_STATE & Checkbox
-        Update_Machine_State --> Display_Full_Cheatsheet: Output Completion Card & Cheatsheet in Chat
-        Display_Full_Cheatsheet --> Next_Plan_Or_Finish: Promote Level & Prompt Next Plan
+        Dual_Validation --> Archive_Plan_Document: Silently write 01~10 archive files
+        Archive_Plan_Document --> Update_Machine_State: Update 00 SYSTEM_STATE header & checkboxes
+        Update_Machine_State --> Display_Full_Cheatsheet: Render milestone card & 1-page cheatsheet
+        Display_Full_Cheatsheet --> Next_Plan_Or_Finish: Level up progression & prompt for next
     }
     
     Phase2_Plan_Execution --> Phase3_Final_Synthesis: All 10 Plans Completed
-    Phase3_Final_Synthesis --> [*]: Final Grand Exam + Grand Feynman -> Silently Write 255 Doc
+    Phase3_Final_Synthesis --> [*]: Final Grand Examiner + Grand Feynman -> Write 255_final document
 ```
 
 ---
 
-## 📁 12 Standardized Markdown Knowledge Archives
+## 📁 Standard 12-Document Markdown Knowledge Base Architecture
 
-Upon completing your learning journey, you will find 12 structured, Typora/Markdown-compatible documents in your folder:
+After completing the full study program, 12 beautifully formatted Markdown documents with `[TOC]` navigation are automatically archived in your dedicated study folder:
 
-| File Name | Content Description |
-| :--- | :--- |
-| `00_overview_and_roadmap.md` | Line 1 Machine State Header + 5-Level Ladders + 20-Hour Pareto Roadmap & Checklist |
-| `01_plan_01_<topic>.md` | Plan 01 Verbatim Dialogue Transcript + Appendix: Plan 01 One-Page Cheatsheet |
-| `02_plan_02_<topic>.md` ~ `10_plan_10_<topic>.md` | Plan 02 ~ Plan 10 Stage Transcripts & One-Page Cheatsheets |
-| `255_final_synthesis_and_cheatsheet.md` | Master Synthesis Transcripts + Appendix: Ultimate Master Cheatsheet |
+```text
+📁 Your_Study_Workspace/
+├── 📄 00_overview_and_roadmap.md             # Machine state header + 5-level ladder + 20h roadmap & progress
+├── 📄 01_plan_01_<topic>.md                  # Plan 01 transcript + Appendix: Plan 01 1-Page Cheatsheet
+├── 📄 02_plan_02_<topic>.md                  # Plan 02 transcript + Appendix: Plan 02 1-Page Cheatsheet
+│   ...
+├── 📄 10_plan_10_<topic>.md                  # Plan 10 transcript + Appendix: Plan 10 1-Page Cheatsheet
+└── 📄 255_final_synthesis_and_cheatsheet.md  # Final Grand Examiner/Feynman transcript + Master Cheatsheet
+```
+
+---
+
+## 💻 Platform Compatibility Matrix
+
+| AI Agent Platform / IDE | Support Level | Supported Features |
+| :--- | :---: | :--- |
+| **Google Antigravity** | 🌟 **Native (Recommended)** | Auto skill detection, file I/O, silent 12-doc archival |
+| **Claude Code** | ✅ **Full Support** | Native file writing, cross-session resume, project/global config |
+| **OpenAI Codex CLI** | ✅ **Full Support** | Native execution & automated workflows |
+| **Cursor / Windsurf** | ✅ **Full Support** | Import as Project Rules / Agent Skill config |
+| **OpenCode / ZCode / OpenClaw** | ✅ **Full Support** | Full state machine & command center support |
+| **Web Chat Interfaces** | ⚠️ **Manual Archiving** | Lacks local disk write permissions; user copies output Markdown manually |
 
 ---
 
-## ⚡ Command Center
+## 📚 Real-World Battle-Tested Examples
 
-Take control of your learning pace at any time:
+Check out the real learning archives in the [`examples/`](./examples/) folder:
 
-* `/skip`: Skip the current concept explanation or quiz and advance immediately.
-* `/jump <01~10|255>`: Jump directly to a specific Plan *(includes safety guardrail to warn against skipped prerequisites)*.
-* `/status`: Display current progress and mastery level from the machine state header.
-* `/cheatsheet [01~10|255]`: Instantly display the one-page cheat sheet for any Plan.
-* `/mode <quick|deep>`: Switch between `quick` (concept + 1 quiz) and `deep` (full teaching + dual validation + complete archival).
+1. ⚙️ **[GD32F4 Embedded Firmware & Hardware Driver Mastery](./examples/gd32_embedded_development/)**
+   - Features: `00` RCU clock tree 5-level ladder, `01` real C driver deep-dive, RCU/GPIO examiner scoring transcript & 1-page cheatsheet.
+2. 💬 **[Interpersonal Dynamics & Social Game Mastery](./examples/pua_dynamics_mastery/)**
+   - Features: `00` progress roadmap, `01` evolutionary psychology & prize framing transcript, dual-value signifiers breakdown & cheatsheet.
+3. 🎵 **[Contemporary KTV Pop Vocal & Mixed Voice Mastery](./examples/ktv_vocal_mastery/)**
+   - Features: `00` vocal milestone roadmap, `01` diaphragm support & vocal cord closure transcript & cheatsheet.
 
 ---
+
+## ⚡ Global Command Center
+
+Control your learning pace anytime with slash commands:
+
+* `/skip`: Skip the current explanation or quiz and advance to the next step.
+* `/jump <01~10|255>`: Jump directly to a designated Plan (includes prerequisite safety airbag).
+* `/status`: Display current study progress and mastery level.
+* `/cheatsheet [01~10|255]`: Display the 1-page cheatsheet for a specific Plan or master sheet.
+* `/mode <quick|deep>`: Toggle mode (`quick` sprint / `deep` thorough dive).
+
+---
+
+## 🤝 Contributing & Support
+
+Issues and Pull Requests are warmly welcome! If this skill helps your deep learning workflow, please give it a ⭐ **Star** on GitHub—it means the world to open-source creators!
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to submit PRs, open Issues, and enjoy 10x deep learning! ⭐️
+This project is licensed under the [MIT License](LICENSE).
