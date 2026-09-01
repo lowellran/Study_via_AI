@@ -2,25 +2,32 @@
   <b>中文</b> | <a href="./README_EN.md">English</a>
 </p>
 
-# 🚀 Study via AI (10倍速 AI 辅助自适应学习操作系统)
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Release-v0.1.1-brightgreen?style=for-the-badge" alt="Release v0.1.1" />
-  <img src="https://img.shields.io/badge/Antigravity-Agent_Skill-blue?style=for-the-badge&logo=google" alt="Antigravity Skill" />
-  <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman-orange?style=for-the-badge" alt="Pedagogy" />
-  <img src="https://img.shields.io/badge/State_Machine-Decoupled-green?style=for-the-badge" alt="State Machine" />
-  <img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" />
+  <h1 align="center">🚀 Study via AI</h1>
+  <p align="center"><b>10x Socratic AI Study OS for Agentic Coding & Knowledge Mastery</b></p>
+  <p align="center"><i>From Zero to Deep Mastery: Single-concept Immersion + Dual Inner-Assessment + 12 Structured Markdown Assets Silent Dump</i></p>
 </p>
 
-> **让 AI 成为你的顶级私教与苏格拉底式引路人。拒绝填鸭与自嗨，以“单点沉浸教学 + 双重内化考核 + 12 份标准化知识资产落盘”，带你 10 倍速彻底吃透任何硬核技能、技术文档或专业教材。**
+<p align="center">
+  <a href="https://github.com/lowellran/Study_via_AI/stargazers"><img src="https://img.shields.io/github/stars/lowellran/Study_via_AI?style=for-the-badge&logo=github&color=gold" alt="Stars" /></a>
+  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.2-brightgreen?style=for-the-badge" alt="Release" /></a>
+  <img src="https://img.shields.io/badge/Supported-Claude_Code_%7C_Codex_%7C_Antigravity_%7C_Cursor-blue?style=for-the-badge" alt="Platforms" />
+  <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman-orange?style=for-the-badge" alt="Pedagogy" />
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" /></a>
+</p>
 
 ---
 
-## ⚡ 极简安装与升级 (Quick Install)
+> 💡 **告别“向 AI 提问关掉窗口全忘光”的浅层学习！**  
+> `Study_via_AI` 是专为 **Google Antigravity、Claude Code、OpenAI Codex CLI、Cursor、Windsurf** 等现代化 Agent 环境打造的自适应学习操作系统。拒绝大段填鸭，通过**严谨状态机、单点通俗拆解、AI 考官逐题打分与 12 岁费曼纠错**，自动生成 12 份可直接归档沉淀的 Markdown 终身知识库。
 
-### 方式一：直接告诉 AI 智能体（最推荐，0 门槛）
+---
 
-直接复制以下一句话发送给 **Google Antigravity / Claude Code / Codex / OpenCode / ZCode / OpenClaw / Reasonix** 等任何支持导入 GitHub 仓库或 Skill 的 AI 平台：
+## ⚡ 极速一键安装 (Quick Install)
+
+### 方式一：直接在 Agent 对话中发送（0 门槛，最推荐）
+
+直接复制以下一句话发送给 **Google Antigravity / Claude Code / Codex / Cursor**：
 
 ```text
 安装这个 skill https://github.com/lowellran/Study_via_AI
@@ -29,81 +36,52 @@
 
 ---
 
-### 方式二：命令行一键安装 (CLI)
+### 方式二：命令行一行安装 (One-Liner CLI)
 
+#### 针对 Codex CLI:
 ```bash
-# 全局快速安装到 skills 仓库
+# Windows (PowerShell)
+git clone https://github.com/lowellran/Study_via_AI.git "$env:USERPROFILE\.codex\skills\Study_via_AI"
+
+# macOS / Linux
+git clone https://github.com/lowellran/Study_via_AI.git ~/.codex/skills/Study_via_AI
+```
+
+#### 针对通用 Agent Skills:
+```bash
 npx skills add lowellran/Study_via_AI -y -g
 ```
 
 ---
 
-### 方式三：手动放置文件 (Manual)
-
-1. 克隆或下载本仓库：
-   ```bash
-   git clone https://github.com/lowellran/Study_via_AI.git
-   ```
-2. 将 `Study_via_AI` 文件夹放置到全局配置目录中：
-   - **Windows**: `C:\Users\<用户名>\.gemini\config\skills\Study_via_AI\`
-   - **macOS / Linux**: `~/.gemini/config/skills/Study_via_AI/`
-
----
-
-## 🚀 极速上手 (Quick Start)
+## 🎯 30 秒上手体验 (Quick Start)
 
 安装完成后，在任意对话中直接输入：
 ```text
 使用 Study_via_AI 帮我学习 [主题名称 / 上传教材文档 / 粘贴文章链接]
 ```
 
-**跨会话断点续学**（随时新开对话窗口）：
+**跨会话断点续学**（随时新开对话窗口，永不迷失进度）：
 ```text
 继续 [文件夹名称或主题名称] 的学习
 ```
 
 ---
 
-## 📊 架构范式对比 (Paradigm Comparison)
+## 📊 为什么选择 Study via AI？(Paradigm Comparison)
 
-| 核心维度 | 传统问答/总结类 Prompt | 纯大纲路线规划工具 | **Study via AI (学习操作系统)** |
+| 核心维度 | 传统问答 / 总结类 Prompt | 纯大纲路线工具 | 🚀 **Study via AI (学习操作系统)** |
 | :--- | :--- | :--- | :--- |
-| **教学颗粒度** | 一次性输出长篇大论，容易造成认知过载 | 只生成章节标题，缺乏逐点精讲 | **极小颗粒度**：一次对话仅讲一个知识点，通俗比喻讲透 |
-| **自有资料锚定** | 仅根据通用大模型知识作答 | 简单提取文本大纲 | **精准溯源**：精确指出教材第几章第几页 / 视频时间戳 |
-| **内化考核深度** | 无考核或浅层提问，易产生“看懂了的假象” | 仅提供自测题目，无即时纠错 | **双重内化闭环**：AI 考官逐题打分 + 12 岁儿童白话费曼诊断 |
-| **抗遗忘与上下文** | 长对话（3小时+）后注意力涣散、规则遗忘 | 无状态流转机制 | **机器状态头解耦**：硬盘存储状态 > Context 记忆，杜绝漂移 |
-| **成果资产化** | 聊天窗口关闭即丢失，无体系沉淀 | 仅生成简单的日志文件 | **12 份标准 Markdown 档案**：带 `[TOC]` 大纲树与一页速查表 |
-| **交互自由度** | 被动顺着 AI 预设流程走 | 难以动态调整进度 | **全局驾驶舱**：支持 `/skip`, `/jump`, `/status`, `/mode` |
+| **教学颗粒度** | 一次性输出长篇大论，认知过载 | 只生成章节标题，缺乏精讲 | **极小单点沉浸**：一次对话仅讲透一个知识点 |
+| **自有资料锚定** | 脱离教材，纯靠通用知识发挥 | 仅粗暴提取大纲 | **精准溯源**：精确指出教材第几章第几页 / 视频时间戳 |
+| **内化考核深度** | 毫无考核或浅层提问，“假装看懂” | 仅提供自测题目，无即时纠错 | **双重内化闭环**：AI 考官逐题打分 + 12 岁儿童白话费曼诊断 |
+| **抗遗忘与上下文** | 长对话后规则遗忘、注意力漂移 | 无状态流转机制 | **机器状态头解耦**：硬盘存储状态 > Context 记忆，杜绝漂移 |
+| **成果资产化** | 聊天窗口关闭即丢失，零沉淀 | 仅生成零散日志 | **12 份标准 Markdown**：带大纲树、对话实录与一页速查表 |
+| **掌控自由度** | 被动顺着 AI 预设流程走 | 难以动态调整进度 | **全局驾驶舱**：支持 `/skip`, `/jump`, `/status`, `/mode` |
 
 ---
 
-## 💻 多平台兼容性矩阵 (Compatibility Matrix)
-
-| 开发环境 / AI Agent 平台 | 兼容性支持 | 说明与支持特性 |
-| :--- | :---: | :--- |
-| **Google Antigravity** | 🌟 **完美原生支持 (推荐)** | 自动识别 Skill、自动文件读写、静默落盘 12 份文档 |
-| **Claude Code** | ✅ **完全支持** | 原生工具写入、跨会话断点续学、支持全局与项目级配置 |
-| **OpenAI Codex CLI** | ✅ **完全支持** | 原生执行与自动化工作流 |
-| **OpenCode / ZCode / OpenClaw** | ✅ **完全支持** | 完整支持状态机与命令系统 |
-| **Cursor / Windsurf** | ✅ **支持** | 引入作为项目 Rules / Agent Skill 配置 |
-| **普通网页端 (Web Chat)** | ⚠️ **需手动落盘** | 网页版因缺少本地磁盘写入权限，需由用户手动复制生成的 Markdown |
-
----
-
-## 📚 真实场景实战示例 (Real-World Examples)
-
-本仓库在 [`examples/`](./examples/) 目录中提供了涵盖**硬核嵌入式开发、两性社交心理学、流行声乐发声**三个真实场景的完整真实实录与落地范例：
-
-1. ⚙️ **[GD32F4 嵌入式固件开发与硬件驱动实战](./examples/gd32_embedded_development/)**
-   - 包含：`00` 号 RCU 时钟树与外设 5 级阶梯路线图、`01` 号真实工程代码精解、RCU/GPIO 考官打分实录与一页速查表。
-2. 💬 **[两性社交动态与博弈心理学实战](./examples/pua_dynamics_mastery/)**
-   - 包含：`00` 号进阶大纲规划、`01` 号进化心理学与奖品框架真实对话实录、双重价值符号拆解与一页速查表。
-3. 🎵 **[KTV 流行声乐发声与混声实战](./examples/ktv_vocal_mastery/)**
-   - 包含：`00` 号声乐进阶阶梯规划、`01` 号横膈膜呼吸支持与声带闭合真实对话实录与速查表。
-
----
-
-## 🔄 全流程工作流与状态机
+## 🔄 全流程工作流与状态机 (Workflow)
 
 ```mermaid
 stateDiagram-v2
@@ -139,12 +117,41 @@ stateDiagram-v2
 
 学完整个课程后，系统将在你的专属学习目录下自动生成 12 份排版严谨、包含 `[TOC]` 大纲树的 Markdown 知识库：
 
-| 文件名 | 内容概述 |
-| :--- | :--- |
-| `00_overview_and_roadmap.md` | 首行机器状态头 + 5 级学习阶梯 + 20 小时精选计划总览与实时进度清单 |
-| `01_plan_01_<topic>.md` | Plan 01 完整真实实录 + 附录：Plan 01 一页速查表 |
-| `02_plan_02_<topic>.md` ~ `10_plan_10_<topic>.md` | Plan 02 ~ Plan 10 各阶段学习实录与速查表 |
-| `255_final_synthesis_and_cheatsheet.md` | 全域终极大考与费曼实录 + 附录：全域终极大一统速查表 (Master Sheet) |
+```text
+📁 你的专属学习目录/
+├── 📄 00_overview_and_roadmap.md             # 机器状态头 + 5 级阶梯 + 20 小时计划与总进度
+├── 📄 01_plan_01_<topic>.md                  # Plan 01 对话实录 + 附录：Plan 01 一页速查表
+├── 📄 02_plan_02_<topic>.md                  # Plan 02 对话实录 + 附录：Plan 02 一页速查表
+│   ...
+├── 📄 10_plan_10_<topic>.md                  # Plan 10 对话实录 + 附录：Plan 10 一页速查表
+└── 📄 255_final_synthesis_and_cheatsheet.md  # 全域总考官与大费曼实录 + 全域大一统速查表 (Master Sheet)
+```
+
+---
+
+## 💻 多平台兼容性矩阵 (Compatibility Matrix)
+
+| 开发环境 / AI Agent 平台 | 兼容性支持 | 说明与支持特性 |
+| :--- | :---: | :--- |
+| **Google Antigravity** | 🌟 **完美原生支持 (推荐)** | 自动识别 Skill、自动文件读写、静默落盘 12 份文档 |
+| **Claude Code** | ✅ **完全支持** | 原生工具写入、跨会话断点续学、支持全局与项目级配置 |
+| **OpenAI Codex CLI** | ✅ **完全支持** | 原生执行与自动化工作流 |
+| **Cursor / Windsurf** | ✅ **完全支持** | 引入作为项目 Rules / Agent Skill 配置 |
+| **OpenCode / ZCode / OpenClaw** | ✅ **完全支持** | 完整支持状态机与命令系统 |
+| **普通网页端 (Web Chat)** | ⚠️ **需手动落盘** | 网页版因缺少本地磁盘写入权限，需由用户手动复制生成的 Markdown |
+
+---
+
+## 📚 真实场景实战案例 (Real-World Examples)
+
+本仓库在 [`examples/`](./examples/) 目录中提供了三个真实领域的落地档案库：
+
+1. ⚙️ **[GD32F4 嵌入式固件开发与硬件驱动实战](./examples/gd32_embedded_development/)**
+   - 包含：`00` 号 RCU 时钟树与外设 5 级阶梯路线图、`01` 号真实工程代码精解、RCU/GPIO 考官打分实录与一页速查表。
+2. 💬 **[两性社交动态与博弈心理学实战](./examples/pua_dynamics_mastery/)**
+   - 包含：`00` 号进阶大纲规划、`01` 号进化心理学与奖品框架真实对话实录、双重价值符号拆解与一页速查表。
+3. 🎵 **[KTV 流行声乐发声与混声实战](./examples/ktv_vocal_mastery/)**
+   - 包含：`00` 号声乐进阶阶梯规划、`01` 号横膈膜呼吸支持与声带闭合真实对话实录与速查表。
 
 ---
 
@@ -160,6 +167,10 @@ stateDiagram-v2
 
 ---
 
+## 🤝 贡献与支持 (Contributing & Support)
+
+欢迎提交 PR 或 Issue！如果你觉得这个 Skill 对你的深度学习有所启发和帮助，请给这个项目点一个 ⭐ **Star**，这是对开源作者最大的鼓励！
+
 ## 📄 开源许可证
 
-本项目采用 [MIT 许可证](LICENSE)。欢迎提交 PR、提出 Issue，或在日常学习中享受 10 倍速深度的成长！⭐️
+本项目采用 [MIT 许可证](LICENSE)。
