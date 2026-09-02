@@ -165,7 +165,7 @@ stateDiagram-v2
 `[english_folder_name]/[01~10]_plan_[01~10]_[plan_name].md`
 
 #### 步骤 2.4：更新机器状态头与前台完整速查表呈现
-1. **同步更新状态**：AI 导师调用文件工具，将 `00_overview_and_roadmap.md` 首行的 `SYSTEM_STATE` 更新为最新值（例如 `"completed_plans": ["01"], "next_plan": "02"`），并将正文列表标记为 `- [x] Plan XX`。
+1. **强制读取总路线图与同步状态**：**在推进下一个 Plan 前，AI 导师必须强制调用 `view_file` 工具读取 `00_overview_and_roadmap.md`，严格以文件中的计划表为唯一基准（Single Source of Truth），绝对严禁脱离路线图凭记忆臆想下一计划名称！** 将 `00_overview_and_roadmap.md` 首行的 `SYSTEM_STATE` 更新为最新值（例如 `"completed_plans": ["01", "02", "03", "04", "05"], "next_plan": "06"`），并将正文列表标记为 `- [x] Plan XX`。
 2. **前台对话框输出成就卡片与完整一页速查表**：
    ```markdown
    🎉 **恭喜圆满通关【Plan XX：XXX】！**
