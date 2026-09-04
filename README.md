@@ -5,21 +5,21 @@
 <p align="center">
   <h1 align="center">🚀 Study via AI</h1>
   <p align="center"><b>10x Socratic AI Study OS for Agentic Coding & Knowledge Mastery</b></p>
-  <p align="center"><i>From Zero to Deep Mastery: Single-concept Immersion + Dual Inner-Assessment + 12 Structured Markdown Assets Silent Dump</i></p>
+  <p align="center"><i>From Zero to Deep Mastery: Single-concept Immersion + 4 Visual Pedagogy Modes + Dual Inner-Assessment + 12 Structured Markdown Assets Silent Dump</i></p>
 </p>
 
 <p align="center">
   <a href="https://github.com/lowellran/Study_via_AI/stargazers"><img src="https://img.shields.io/github/stars/lowellran/Study_via_AI?style=for-the-badge&logo=github&color=gold" alt="Stars" /></a>
-  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.2-brightgreen?style=for-the-badge" alt="Release" /></a>
+  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.3-brightgreen?style=for-the-badge" alt="Release" /></a>
   <img src="https://img.shields.io/badge/Supported-Claude_Code_%7C_Codex_%7C_Antigravity_%7C_Cursor-blue?style=for-the-badge" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman-orange?style=for-the-badge" alt="Pedagogy" />
+  <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman_%2B_Multimodal-orange?style=for-the-badge" alt="Pedagogy" />
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" /></a>
 </p>
 
 ---
 
 > 💡 **告别“向 AI 提问关掉窗口全忘光”的浅层学习！**  
-> `Study_via_AI` 是专为 **Google Antigravity、Claude Code、OpenAI Codex CLI、Cursor、Windsurf** 等现代化 Agent 环境打造的自适应学习操作系统。拒绝大段填鸭，通过**严谨状态机、单点通俗拆解、AI 考官逐题打分与 12 岁费曼纠错**，自动生成 12 份可直接归档沉淀的 Markdown 终身知识库。
+> `Study_via_AI` 是专为 **Google Antigravity、Claude Code、OpenAI Codex CLI、Cursor、Windsurf** 等现代化 Agent 环境打造的自适应学习操作系统。拒绝大段填鸭，通过**严谨状态机、单点通俗拆解、4 大现代化视觉教学模式、AI 考官逐题打分与 12 岁费曼纠错**，自动生成 12 份可直接归档沉淀的 Markdown 终身知识库。
 
 ---
 
@@ -68,12 +68,29 @@ npx skills add lowellran/Study_via_AI -y -g
 
 ---
 
+## 🎨 4 大视觉呈现与教学偏好模式 (Visual Pedagogy Modes)
+
+在每个小知识点开讲前，系统会自动输出**术语速记库**并提供 4 大现代化视觉教学模式供你随心选择：
+
+1. 🖼️ **选项 1【AI 深度图解生图】**：
+   - **模式 1A**：导师直出高颜值彩色原理图与生活比喻图，并融入图文深度拆解。
+   - **模式 1B**：导师提供两套精细 Prompt，**强制阻塞等待**用户外部生成回传后深度结合。
+2. ⚡ **选项 2【极速直接讲（现代平滑图解）】**：
+   - 无需生图等待，采用现代彩色平滑矢量图（SVG/Mermaid）极速推进，**全面废除粗糙生硬的 ASCII 字符画**。
+3. 🌐 **选项 3【全源真实实料与网络图文截取嵌入】**：
+   - 后台自动调用 Python 提取本地 PDF 讲义插图、调用工具截取本地视频关键帧、全网深挖权威教程原图直接内嵌！
+4. 🌟 **选项 4【智能教学模式】（强烈推荐）**：
+   - 融合 1、2、3 全部优势，以内置基准讲义为标杆，大白话通俗比喻 + 在最合适的位置随文嵌入最合适的现代插图与时序卡片。
+
+---
+
 ## 📊 为什么选择 Study via AI？(Paradigm Comparison)
 
 | 核心维度 | 传统问答 / 总结类 Prompt | 纯大纲路线工具 | 🚀 **Study via AI (学习操作系统)** |
 | :--- | :--- | :--- | :--- |
-| **教学颗粒度** | 一次性输出长篇大论，认知过载 | 只生成章节标题，缺乏精讲 | **极小单点沉浸**：一次对话仅讲透一个知识点 |
-| **自有资料锚定** | 脱离教材，纯靠通用知识发挥 | 仅粗暴提取大纲 | **精准溯源**：精确指出教材第几章第几页 / 视频时间戳 |
+| **教学颗粒度** | 一次性输出长篇大论，认知过载 | 只生成章节标题，缺乏精讲 | **极小单点沉浸**：一次对话仅讲透一个知识点，严格等待用户确认 |
+| **视觉呈现** | 粗糙 ASCII 字符画或纯文本 | 无图或格式错乱 | **现代平滑矢量图/真实原图**：全面告别 ASCII，支持 4 大视觉模式 |
+| **自有资料锚定** | 脱离教材，纯靠通用知识发挥 | 仅粗暴提取大纲 | **精准溯源**：精确指出教材第几章第几页 / 视频时间戳与实料截帧 |
 | **内化考核深度** | 毫无考核或浅层提问，“假装看懂” | 仅提供自测题目，无即时纠错 | **双重内化闭环**：AI 考官逐题打分 + 12 岁儿童白话费曼诊断 |
 | **抗遗忘与上下文** | 长对话后规则遗忘、注意力漂移 | 无状态流转机制 | **机器状态头解耦**：硬盘存储状态 > Context 记忆，杜绝漂移 |
 | **成果资产化** | 聊天窗口关闭即丢失，零沉淀 | 仅生成零散日志 | **12 份标准 Markdown**：带大纲树、对话实录与一页速查表 |
@@ -90,9 +107,10 @@ stateDiagram-v2
     Phase1_Roadmap_Gen --> Phase2_Plan_Execution: 静默落盘 00_overview_and_roadmap.md
     
     state Phase2_Plan_Execution {
-        [*] --> Single_Concept_Teaching: 启动 Plan N (读取首行 SYSTEM_STATE)
-        Single_Concept_Teaching --> QnA_and_Discussion: 讲解单个知识点 + 溯源指引
-        QnA_and_Discussion --> Single_Concept_Teaching: 答疑直至搞懂（下一个知识点）
+        [*] --> Term_Deconstruction: 输出专业术语速记库 + 4 大视觉呈现选项确认
+        Term_Deconstruction --> Single_Concept_Teaching: 启动 Plan N (现代平滑矢量图/真实插图深度讲解)
+        Single_Concept_Teaching --> QnA_and_Discussion: 严格单点互动（严禁自嗨越权，静默等待作答）
+        QnA_and_Discussion --> Single_Concept_Teaching: 答疑直至搞懂（推进下一知识点）
         QnA_and_Discussion --> Dual_Validation: 当前 Plan 知识点全部学完
         
         state Dual_Validation {
