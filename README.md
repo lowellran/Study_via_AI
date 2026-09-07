@@ -10,16 +10,16 @@
 
 <p align="center">
   <a href="https://github.com/lowellran/Study_via_AI/stargazers"><img src="https://img.shields.io/github/stars/lowellran/Study_via_AI?style=for-the-badge&logo=github&color=gold" alt="Stars" /></a>
-  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.3-brightgreen?style=for-the-badge" alt="Release" /></a>
+  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.4-brightgreen?style=for-the-badge" alt="Release" /></a>
   <img src="https://img.shields.io/badge/Supported-Claude_Code_%7C_Codex_%7C_Antigravity_%7C_Cursor-blue?style=for-the-badge" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Pedagogy-Socratic_%2B_Feynman_%2B_Multimodal-orange?style=for-the-badge" alt="Pedagogy" />
+  <img src="https://img.shields.io/badge/Pedagogy-Dark_Examiner_%2B_Anti_Sycophancy_%2B_Feynman-red?style=for-the-badge" alt="Pedagogy" />
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" /></a>
 </p>
 
 ---
 
 > 💡 **告别“向 AI 提问关掉窗口全忘光”的浅层学习！**  
-> `Study_via_AI` 是专为 **Google Antigravity、Claude Code、OpenAI Codex CLI、Cursor、Windsurf** 等现代化 Agent 环境打造的自适应学习操作系统。拒绝大段填鸭，通过**严谨状态机、单点通俗拆解、4 大现代化视觉教学模式、AI 考官逐题打分与 12 岁费曼纠错**，自动生成 12 份可直接归档沉淀的 Markdown 终身知识库。
+> `Study_via_AI` 是专为 **Google Antigravity、Claude Code、OpenAI Codex CLI、Cursor、Windsurf** 等现代化 Agent 环境打造的自适应学习操作系统。拒绝大段填鸭，通过**严谨状态机、单点通俗拆解、4 大现代化视觉教学模式、暗黑硬核考官（零讨好、0分死刑、手术刀解剖、满分降维示范）与 12 岁费曼反向审判**，自动生成 12 份可直接归档沉淀的 Markdown 终身知识库。
 
 ---
 
@@ -91,7 +91,7 @@ npx skills add lowellran/Study_via_AI -y -g
 | **教学颗粒度** | 一次性输出长篇大论，认知过载 | 只生成章节标题，缺乏精讲 | **极小单点沉浸**：一次对话仅讲透一个知识点，严格等待用户确认 |
 | **视觉呈现** | 粗糙 ASCII 字符画或纯文本 | 无图或格式错乱 | **现代平滑矢量图/真实原图**：全面告别 ASCII，支持 4 大视觉模式 |
 | **自有资料锚定** | 脱离教材，纯靠通用知识发挥 | 仅粗暴提取大纲 | **精准溯源**：精确指出教材第几章第几页 / 视频时间戳与实料截帧 |
-| **内化考核深度** | 毫无考核或浅层提问，“假装看懂” | 仅提供自测题目，无即时纠错 | **双重内化闭环**：AI 考官逐题打分 + 12 岁儿童白话费曼诊断 |
+| **内化考核深度** | 毫无考核或浅层提问，“假装看懂” | 仅提供自测题目，无即时纠错 | **暗黑硬核内化 (Zero Sycophancy)**：封杀 AI 客套，0分死刑机制 + 原话手术刀解剖 + 导师级降维满分示范 (A/B/C) + 80分门禁与变式题压测 + 12岁费曼防复读童真质检 |
 | **抗遗忘与上下文** | 长对话后规则遗忘、注意力漂移 | 无状态流转机制 | **机器状态头解耦**：硬盘存储状态 > Context 记忆，杜绝漂移 |
 | **成果资产化** | 聊天窗口关闭即丢失，零沉淀 | 仅生成零散日志 | **12 份标准 Markdown**：带大纲树、对话实录与一页速查表 |
 | **掌控自由度** | 被动顺着 AI 预设流程走 | 难以动态调整进度 | **全局驾驶舱**：支持 `/skip`, `/jump`, `/status`, `/mode` |
@@ -114,8 +114,8 @@ stateDiagram-v2
         QnA_and_Discussion --> Dual_Validation: 当前 Plan 知识点全部学完
         
         state Dual_Validation {
-            [*] --> AI_Examiner: 方法三：AI 考官逐题单题测试与百分制评分
-            AI_Examiner --> Feynman_Loop: 考官测试通关 -> 方法六：12岁费曼循环
+            [*] --> AI_Examiner: 方法三：暗黑 AI 考官即时实战测试 (0分死刑/原话解剖/满分示范/80分变式门禁)
+            AI_Examiner --> Feynman_Loop: 考官测试通关 -> 方法六：12岁费曼反向审判 (黑话零容忍/防复读)
             Feynman_Loop --> [*]: 费曼纠错通关
         }
         
