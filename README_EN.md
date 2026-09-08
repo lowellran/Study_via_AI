@@ -10,9 +10,9 @@
 
 <p align="center">
   <a href="https://github.com/lowellran/Study_via_AI/stargazers"><img src="https://img.shields.io/github/stars/lowellran/Study_via_AI?style=for-the-badge&logo=github&color=gold" alt="Stars" /></a>
-  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.4-brightgreen?style=for-the-badge" alt="Release" /></a>
+  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.5-brightgreen?style=for-the-badge" alt="Release" /></a>
   <img src="https://img.shields.io/badge/Supported-Claude_Code_%7C_Codex_%7C_Antigravity_%7C_Cursor-blue?style=for-the-badge" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Pedagogy-Dark_Examiner_%2B_Anti_Sycophancy_%2B_Feynman-red?style=for-the-badge" alt="Pedagogy" />
+  <img src="https://img.shields.io/badge/Vision-Anti_Broken_Image_%2B_Zero_Black_Box_%2B_429_Fallback-blue?style=for-the-badge" alt="Pedagogy" />
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" /></a>
 </p>
 

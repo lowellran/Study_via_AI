@@ -10,9 +10,9 @@
 
 <p align="center">
   <a href="https://github.com/lowellran/Study_via_AI/stargazers"><img src="https://img.shields.io/github/stars/lowellran/Study_via_AI?style=for-the-badge&logo=github&color=gold" alt="Stars" /></a>
-  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.4-brightgreen?style=for-the-badge" alt="Release" /></a>
+  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.5-brightgreen?style=for-the-badge" alt="Release" /></a>
   <img src="https://img.shields.io/badge/Supported-Claude_Code_%7C_Codex_%7C_Antigravity_%7C_Cursor-blue?style=for-the-badge" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Pedagogy-Dark_Examiner_%2B_Anti_Sycophancy_%2B_Feynman-red?style=for-the-badge" alt="Pedagogy" />
+  <img src="https://img.shields.io/badge/Vision-Anti_Broken_Image_%2B_Zero_Black_Box_%2B_429_Fallback-blue?style=for-the-badge" alt="Pedagogy" />
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" /></a>
 </p>
 
@@ -77,10 +77,7 @@ npx skills add lowellran/Study_via_AI -y -g
    - **模式 1B**：导师提供两套精细 Prompt，**强制阻塞等待**用户外部生成回传后深度结合。
 2. ⚡ **选项 2【极速直接讲（现代平滑图解）】**：
    - 无需生图等待，采用现代彩色平滑矢量图（SVG/Mermaid）极速推进，**全面废除粗糙生硬的 ASCII 字符画**。
-3. 🌐 **选项 3【全源真实实料与网络图文截取嵌入】**：
-   - 后台自动调用 Python 提取本地 PDF 讲义插图、调用工具截取本地视频关键帧、全网深挖权威教程原图直接内嵌！
-4. 🌟 **选项 4【智能教学模式】（强烈推荐）**：
-   - 融合 1、2、3 全部优势，以内置基准讲义为标杆，大白话通俗比喻 + 在最合适的位置随文嵌入最合适的现代插图与时序卡片。
+3. 🌐 **选项 3【全源真实实料与网络图文截取嵌入】**：\r\n   - 后台自动调用 Python 提取本地 PDF 讲义插图、截取本地视频关键帧、全网深挖权威教程原图直接内嵌！\r\n4. 🌟 **选项 4【智能教学模式】（强烈推荐）**：\r\n   - 融合 1、2、3 全部优势，以内置基准讲义为标杆，大白话通俗比喻 + 随文智能嵌入最匹配的现代插图与时序卡片。\r\n\r\n> 🛡️ **工业级视觉防护体系**：\r\n> - **防裂图沙箱规范**：杜绝跨盘符链接（如 ile:///D:/...），统一收敛至会话沙箱目录引用；\r\n> - **防黑块截断质检**：提取讲义/网络图片时后台执行 Pillow 完整性校验，拦截残缺文件并自动重拉无损原图；\r\n> - **生图 429 容灾兜底**：若 AI 生图配额耗尽，秒级切换本地 Python Matplotlib/SVG 绘制深色科技蓝图（Dark Tech Blueprint），确保图文教学链条 100% 坚如磐石！
 
 ---
 
