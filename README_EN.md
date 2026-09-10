@@ -10,9 +10,9 @@
 
 <p align="center">
   <a href="https://github.com/lowellran/Study_via_AI/stargazers"><img src="https://img.shields.io/github/stars/lowellran/Study_via_AI?style=for-the-badge&logo=github&color=gold" alt="Stars" /></a>
-  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.7-brightgreen?style=for-the-badge" alt="Release" /></a>
+  <a href="https://github.com/lowellran/Study_via_AI/releases"><img src="https://img.shields.io/badge/Release-v0.1.8-brightgreen?style=for-the-badge" alt="Release" /></a>
   <img src="https://img.shields.io/badge/Supported-Claude_Code_%7C_Codex_%7C_Antigravity_%7C_Cursor-blue?style=for-the-badge" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Global-Multi_Language_Zero_Config_%2B_Pre_Exam_Gatekeeping_%2B_Per_Topic_Visual_Choice-purple?style=for-the-badge" alt="Pedagogy" />
+  <img src="https://img.shields.io/badge/Archive-Deterministic_Python_Pipeline_%2B_Triple_Physical_Assertion_%2B_State_Lockout-purple?style=for-the-badge" alt="Pedagogy" />
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License" /></a>
 </p>
 

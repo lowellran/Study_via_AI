@@ -319,9 +319,37 @@ stateDiagram-v2
      - **二次打回/彻底卡壳救急（示范即封禁，强制换题机制）**：若学员经过反思依然完全卡壳，导师为了启发学员思维，可以破例给出一个降维比喻示范。**但该示范比喻立即进入【永久封禁黑名单】（严禁学员学舌复读该比喻）**！考官立即**更换该 Plan 的另一个核心机制（或要求学员用截然不同的生活载体）重新进行变式费曼考核**！
    - **通关判定**：只有当学员凭借自己独立构思的比喻，100% 摆脱学术黑话、通俗自洽且小学生能完全听懂时，才允许判定为【费曼通关】！
 
-#### 步骤 2.3：原生工具静默落盘当次档案
-双重考核通关后，AI 导师**调用原生文件工具**，将完整原汁原味实录与速查表直接写入：
+#### 步骤 2.3：原生确定性脚本静默落盘当次档案（🚨 彻底剥夺 AI 手写实录权限 · 机械物理断言锁死）
+
+双重考核通关后，AI 导师必须将当次 Plan 的**全量 100% 原汁原味逐字实录**写入：
 `[english_folder_name]/[01~10]_plan_[01~10]_[plan_name].md`
+
+**🚨 彻底剥夺 AI 手写实录权限与物理断言锁死（Deterministic Verbatim Extraction Pipeline - 绝对红线）**：
+1. **彻底剥夺 AI 自然语言手写/脑补实录正文的权限**：
+   - **严禁 AI 在上下文记忆中自行“撰写”实录文本！** 大模型由于固有的压缩与摘要偏置，极易自作聪明把实录缩写成几百字的提纲大纲，这种行为一律判定为**违规废品**！
+   - **必须且只能通过运行确定性 Python 提取脚本导出**！系统已内置标准提取脚本 `scripts/export_verbatim_archive.py`。
+2. **机械化调用标准命令（唯一合规落盘通道）**：
+   - AI 导师仅负责编写该 Plan 的【一页速查表 (One-Page Cheat Sheet)】临时存入 `scratch/cheatsheet_planXX.md`，然后必须在终端真正调用命令执行物理导出：
+     ```powershell
+     python scripts/export_verbatim_archive.py `
+       --brain_dir "<appDataDir>/brain/<conversation-id>" `
+       --plan_num <01~10> `
+       --plan_title "<计划完整标题>" `
+       --output_file "<english_folder_name>/<filename>.md" `
+       --cheatsheet_file "scratch/cheatsheet_planXX.md" `
+       --start_turn <起始交互轮次> `
+       --end_turn <结束交互轮次>
+     ```
+   - 脚本将直接读取系统的 `transcript_full.jsonl`（或 `transcript.jsonl`），将当前 Plan 区间的每一句用户发言与导师回复原封不动导出为 Markdown 标准交互格式。
+3. **💥 三重物理硬断言拦截（Hard Physical Assertions）**：
+   - 提取脚本内置严苛的物理 Assertions，违反任意一条直接触发 `sys.exit(1)` 崩溃报错：
+     1. `assert turn_counter >= 5`: 提取的真实对话轮次不足 5 轮，判定为伪造偷工实录，脚本自毁！
+     2. `assert len(full_text) >= 5000`: 导出的 Markdown 文件总字符数少于 5000 字（未达真实实录体量），判定为擅自缩写概括，脚本自毁！
+     3. `assert "### 👤 学员发言 / 指令：" in full_text and "### 🤖 导师讲授 / 回复 / 代码：" in full_text`: 必须 100% 具备双角色对话实录排版！
+4. **🔒 状态机物理死锁阻断（State Lockout）**：
+   - 只有当 `export_verbatim_archive.py` 成功执行并返回 `exit code 0` 时，系统才允许执行【步骤 2.4】更新 `00_overview_and_roadmap.md` 的机器状态头。
+   - 若脚本未执行或报错，系统状态立即标记为 `ARCHIVE_FAILED`，**绝对严禁向用户虚假播报通关成就卡片，绝对严禁推进至下一 Plan！**
+
 
 #### 步骤 2.4：更新机器状态头与前台完整速查表呈现
 1. **强制读取总路线图与同步状态**：**在推进下一个 Plan 前，AI 导师必须强制调用 `view_file` 工具读取 `00_overview_and_roadmap.md`，严格以文件中的计划表为唯一基准（Single Source of Truth），绝对严禁脱离路线图凭记忆臆想下一计划名称！** 将 `00_overview_and_roadmap.md` 首行的 `SYSTEM_STATE` 更新为最新值（例如 `"completed_plans": ["01", "02", "03", "04", "05"], "next_plan": "06"`），并将正文列表标记为 `- [x] Plan XX`。
