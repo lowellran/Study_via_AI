@@ -22,6 +22,7 @@ def parse_args():
     parser.add_argument("--end_step", type=int, default=None, help="Optional end step index in transcript")
     parser.add_argument("--start_turn", type=int, default=None, help="Optional start turn index in extracted turns")
     parser.add_argument("--end_turn", type=int, default=None, help="Optional end turn index in extracted turns")
+    parser.add_argument("--mode", type=str, choices=["quick", "deep"], default="deep", help="Execution mode: quick sprint or deep mastery")
     return parser.parse_args()
 
 def extract_turns(brain_dir):
@@ -76,7 +77,10 @@ def main():
         cheatsheet_content = f.read().strip()
 
     doc_lines = []
-    doc_lines.append(f"# Plan {args.plan_num:02d} 归档：{args.plan_title}（100% 逐字互动全量实录）\n")
+    if args.mode == "quick":
+        doc_lines.append(f"# 极速实战归档：{args.plan_title}（100% 逐字互动全量实录）\n")
+    else:
+        doc_lines.append(f"# Plan {args.plan_num:02d} 归档：{args.plan_title}（100% 逐字互动全量实录）\n")
     doc_lines.append("[TOC]\n")
     doc_lines.append("---\n")
 
@@ -112,15 +116,20 @@ def main():
             turn_counter += 1
             i += 1
 
-    doc_lines.append(f"## 附录：【Plan {args.plan_num:02d}】一页速查表 (One-Page Cheat Sheet)\n")
+    if args.mode == "quick":
+        doc_lines.append(f"## 附录：极速实战一页速查表 (One-Page Cheat Sheet)\n")
+    else:
+        doc_lines.append(f"## 附录：【Plan {args.plan_num:02d}】一页速查表 (One-Page Cheat Sheet)\n")
     doc_lines.append(cheatsheet_content + "\n")
 
     full_text = "\n".join(doc_lines)
 
     # Hard physical assertions
-    print(f"Checking assertions: turn_counter={turn_counter}, total_chars={len(full_text)}")
-    assert turn_counter >= 5, f"【防偷懒物理断言失败】交互轮次仅 {turn_counter} 轮，不足 5 轮，判定为偷工减料假实录！"
-    assert len(full_text) >= 5000, f"【防偷懒物理断言失败】实录总字数仅 {len(full_text)} 字，少于 5000 字门禁，判定为擅自缩写概括！"
+    min_turns = 2 if args.mode == "quick" else 5
+    min_chars = 1500 if args.mode == "quick" else 5000
+    print(f"Checking assertions (mode={args.mode}): turn_counter={turn_counter}, total_chars={len(full_text)} (limits: turns>={min_turns}, chars>={min_chars})")
+    assert turn_counter >= min_turns, f"【防偷懒物理断言失败】交互轮次仅 {turn_counter} 轮，不足 {min_turns} 轮门禁！"
+    assert len(full_text) >= min_chars, f"【防偷懒物理断言失败】实录总字数仅 {len(full_text)} 字，少于 {min_chars} 字门禁！"
     assert "### 👤 学员发言 / 指令：" in full_text, "【防偷懒物理断言失败】缺失学员发言栏目！"
     assert "### 🤖 导师讲授 / 回复 / 代码：" in full_text, "【防偷懒物理断言失败】缺失导师讲授栏目！"
     assert "## 附录：" in full_text, "【防偷懒物理断言失败】缺失速查表附录！"
